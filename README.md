@@ -14,7 +14,7 @@ python3 -V
 ```
 
 ## Run
-You can run this project simply by:
+Test and run this project simply by:
 ```bash
 bash run.sh
 ```
