@@ -2,7 +2,7 @@
 
 This project is [a code challenge from Insight](https://github.com/InsightDataScience/find-political-donors). 
 
-It utilizes Python data structure like dict, order dict and heap to ensure it can process large files and generate outputs in a reasonable period of time. 
+It utilizes data structure like dict, order dict and heap to ensure it can process large files and generate outputs in at most linear time. 
 
 ## Setup
 
@@ -14,10 +14,11 @@ python3 -V
 ```
 
 ## Run
-You can run this project sby:
+You can run this project simply by:
 ```bash
 bash run.sh
 ```
+When finishes running, `medianvals_by_date.txt` and `medianvals_by_zip` will be in `output` folder.
 
 ## Authors
 - Yang Yang
