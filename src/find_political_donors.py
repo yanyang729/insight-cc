@@ -14,7 +14,6 @@ class Recorder:
         """
         take in a new number and update count, and sum, and running median
         :param num: number that streamed in
-        :return: None
         """
         self.count += 1
         self.sum += num
@@ -27,7 +26,7 @@ class Recorder:
         """
         if two heap size different, pop from larger heap.
         if two heap size same, pop from both heaps and take the mean,
-        :return:
+        :return: int
         """
         small, large = self.heaps
         if len(large) > len(small):
