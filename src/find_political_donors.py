@@ -32,7 +32,11 @@ class Recorder:
         small, large = self.heaps
         if len(large) > len(small):
             return large[0]
-        return int(round((large[0] - small[0]) / 2.0))
+        # built-in python3 round method round to nearest even number when ends with 0.5, which is not expected by this case.
+        if (large[0] - small[0]) % 2:
+            return int((large[0] - small[0]) / 2.0 + 1)
+        else:
+            return int((large[0] - small[0]) / 2.0)
 
 
 class Parser:

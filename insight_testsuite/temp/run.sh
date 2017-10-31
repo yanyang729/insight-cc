@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Start unit test..."
-if ! python3 ./src/find_political_donors_unittest.py ; then
+if ! python3 ./src/find_political_donors_test.py ; then
     echo "An error occurred, exit."
     exit
 fi

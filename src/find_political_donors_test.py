@@ -20,7 +20,7 @@ def recorder_test():
     recorder = Recorder()
     for i in [2, 3, 4, 5, 6, 7]:
         recorder.add_num(i)
-    assert recorder.count == 6 and recorder.sum == 27 and recorder.find_median() == 4, "Recorder class doesn't work as expected"
+    assert recorder.count == 6 and recorder.sum == 27 and recorder.find_median() == 5, "Recorder class doesn't work as expected"
 
 
 def parser_test():
